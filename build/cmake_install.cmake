@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/parallels/csda10f_motoman/build/gtest/cmake_install.cmake")
-  include("/home/parallels/csda10f_motoman/build/csda10f_asm_4URDF_precision_model_description/cmake_install.cmake")
+  include("/home/parallels/csda10f_motoman/build/csda10f_precision_model_description/cmake_install.cmake")
 
 endif()
 

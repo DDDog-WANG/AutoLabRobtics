@@ -1,0 +1,14 @@
+<launch>
+
+  <arg default="$(find csda10f_precision_model_description)/urdf/csda10f_precision_model.xacro" name="model"/>
+  <arg default="true" name="gui"/>
+  <arg default="$(find csda10f_precision_model_description)/config/display.rviz" name="rvizconfig"/>
+  <param command="$(find xacro)/xacro $(arg model)" name="robot_description"/>
+  <param name="use_gui" value="$(arg gui)"/>
+
+  <node args="-d $(arg rvizconfig)" name="rviz" pkg="rviz" required="true" type="rviz"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+  
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find csda10f_precision_model_description)/launch/controller.yaml" command="load"/>
+<node args="A1_position_controller S1_position_controller L1_position_controller E1_position_controller U1_position_controller R1_position_controller B1_position_controller T1_position_controller S2_position_controller L2_position_controller E2_position_controller U2_position_controller R2_position_controller B2_position_controller T2_position_controller R1F1_position_controller R1F2_position_controller R2F1_position_controller R2F2_position_controller joint_state_controller " name="controller_spawner" ns="csda10f_precision_model" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+  <remap from="/joint_states" to="/csda10f_precision_model/joint_states"/>
+</node>
+
+</launch>
