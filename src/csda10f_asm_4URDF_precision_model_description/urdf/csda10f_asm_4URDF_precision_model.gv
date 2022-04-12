@@ -1,0 +1,68 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"SBASE_1" [label="SBASE_1"];
+"S1_1" [label="S1_1"];
+"L1_1" [label="L1_1"];
+"E1_1" [label="E1_1"];
+"U1_1" [label="U1_1"];
+"R1_1" [label="R1_1"];
+"B1_1" [label="B1_1"];
+"T1_1" [label="T1_1"];
+"hand__1__1" [label="hand__1__1"];
+"MAHOLO_FINGER_R__Simplified__v3__1__1" [label="MAHOLO_FINGER_R__Simplified__v3__1__1"];
+"MAHOLO_FINGER_L__Simplified__v6__1__1" [label="MAHOLO_FINGER_L__Simplified__v6__1__1"];
+"S2_1" [label="S2_1"];
+"L2_1" [label="L2_1"];
+"E2_1" [label="E2_1"];
+"U2_1" [label="U2_1"];
+"R2_1" [label="R2_1"];
+"B2_1" [label="B2_1"];
+"T2_1" [label="T2_1"];
+"hand_1" [label="hand_1"];
+"MAHOLO_FINGER_R__Simplified__v3_1" [label="MAHOLO_FINGER_R__Simplified__v3_1"];
+"MAHOLO_FINGER_L__Simplified__v6_1" [label="MAHOLO_FINGER_L__Simplified__v6_1"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "A1" [label="xyz: 0 -0.092509 0.8935 \nrpy: 0 -0 0"]
+"A1" -> "SBASE_1"
+"SBASE_1" -> "S1" [label="xyz: 0.123 -0.1 0.3065 \nrpy: 0 -0 0"]
+"S1" -> "S1_1"
+"S1_1" -> "L1" [label="xyz: 0.142 -0.045052 -0.005612 \nrpy: 0 -0 0"]
+"L1" -> "L1_1"
+"L1_1" -> "E1" [label="xyz: 0.006413 0.066668 -0.167929 \nrpy: 0 -0 0"]
+"E1" -> "E1_1"
+"E1_1" -> "U1" [label="xyz: -0.008634 0.021393 -0.18421 \nrpy: 0 -0 0"]
+"U1" -> "U1_1"
+"U1_1" -> "R1" [label="xyz: 0.02536 -0.158588 0.107254 \nrpy: 0 -0 0"]
+"R1" -> "R1_1"
+"R1_1" -> "B1" [label="xyz: 0.023628 -0.138353 0.092635 \nrpy: 0 -0 0"]
+"B1" -> "B1_1"
+"B1_1" -> "T1" [label="xyz: -0.014714 -0.000497 0.118035 \nrpy: 0 -0 0"]
+"T1" -> "T1_1"
+"T1_1" -> "FixR2" [label="xyz: 0.000125 0.000198 0.056999 \nrpy: 0 -0 0"]
+"FixR2" -> "hand__1__1"
+"hand__1__1" -> "R2F1" [label="xyz: 0.036998 -0.004396 0.092035 \nrpy: 0 -0 0"]
+"R2F1" -> "MAHOLO_FINGER_R__Simplified__v3__1__1"
+"hand__1__1" -> "R2F2" [label="xyz: -0.03651 0.005034 0.092164 \nrpy: 0 -0 0"]
+"R2F2" -> "MAHOLO_FINGER_L__Simplified__v6__1__1"
+"SBASE_1" -> "S2" [label="xyz: -0.123 -0.1 0.3065 \nrpy: 0 -0 0"]
+"S2" -> "S2_1"
+"S2_1" -> "L2" [label="xyz: -0.142 -0.045052 -0.005612 \nrpy: 0 -0 0"]
+"L2" -> "L2_1"
+"L2_1" -> "E2" [label="xyz: -0.006413 0.066668 -0.167929 \nrpy: 0 -0 0"]
+"E2" -> "E2_1"
+"E2_1" -> "U2" [label="xyz: 0.008634 0.021393 -0.18421 \nrpy: 0 -0 0"]
+"U2" -> "U2_1"
+"U2_1" -> "R2" [label="xyz: -0.025358 -0.158574 0.107274 \nrpy: 0 -0 0"]
+"R2" -> "R2_1"
+"R2_1" -> "B2" [label="xyz: -0.023628 -0.138354 0.092635 \nrpy: 0 -0 0"]
+"B2" -> "B2_1"
+"B2_1" -> "T2" [label="xyz: 0.014714 -0.000497 0.118035 \nrpy: 0 -0 0"]
+"T2" -> "T2_1"
+"T2_1" -> "FixR1" [label="xyz: -0.000125 0.000198 0.057 \nrpy: 0 -0 0"]
+"FixR1" -> "hand_1"
+"hand_1" -> "R1F1" [label="xyz: 0.036646 -0.003966 0.091994 \nrpy: 0 -0 0"]
+"R1F1" -> "MAHOLO_FINGER_R__Simplified__v3_1"
+"hand_1" -> "R1F2" [label="xyz: -0.036967 0.004604 0.091803 \nrpy: 0 -0 0"]
+"R1F2" -> "MAHOLO_FINGER_L__Simplified__v6_1"
+}

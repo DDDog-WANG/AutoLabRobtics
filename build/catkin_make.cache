@@ -1,0 +1,2 @@
+csda10f_asm_4URDF_precision_model_description
+-DCATKIN_DEVEL_PREFIX=/home/parallels/csda10f_motoman/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/csda10f_motoman/install -G Unix Makefiles

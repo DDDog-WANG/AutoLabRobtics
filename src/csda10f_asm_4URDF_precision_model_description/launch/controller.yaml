@@ -1,0 +1,83 @@
+csda10f_asm_4URDF_precision_model_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  A1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: A1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  S1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: S1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  L1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: L1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  E1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: E1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  U1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: U1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  B1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: B1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  T1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: T1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  S2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: S2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  L2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: L2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  E2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: E2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  U2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: U2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  B2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: B2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  T2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: T2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R1F1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R1F1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R1F2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R1F2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R2F1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R2F1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  R2F2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: R2F2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
