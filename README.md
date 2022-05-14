@@ -14,11 +14,17 @@ The outline of this research is like this.
 
 <img src="./image/step.png" alt="segmentation" style="zoom:50%;" />
 
-* eg: Using Maholo in robosuite. 
+* For examples:
 
-  <img src="./image/pickput.png" alt="segmentation" style="zoom:50%;" />
+  * eg: Using Maholo in robosuite. 
 
-* eg: Maholo in rviz.
+    <img src="./image/pickput.png" alt="segmentation" style="zoom:50%;" />
 
-  <img src="./image/motoman.png" alt="segmentation" style="zoom:50%;" />
+  * eg: Maholo in rviz.
+
+    <img src="./image/motoman.png" alt="segmentation" style="zoom:50%;" />
+
+  * Experiment behaviors.
+
+    <img src="./image/behaviors.png" alt="segmentation" style="zoom:50%;" />
 
